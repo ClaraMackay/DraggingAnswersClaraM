@@ -1,4 +1,4 @@
------------------------------------------------------------------------------------------
+                  -----------------------------------------------------------------------------------------
 --
 -- game_level1.lua
 -- Created by: Daniel
@@ -384,6 +384,7 @@ local function TouchListenerAnswerBox3(touch)
         end
     end
 end 
+
 -- Function that Adds Listeners to each answer box
 local function AddAnswerBoxEventListeners()
     answerbox:addEventListener("touch", TouchListenerAnswerbox)
@@ -497,6 +498,7 @@ function scene:show( event )
         -- Insert code here to make the scene come alive.
         -- Example: start timers, begin animation, play audio, etc.
         RestartLevel1()
+        
         AddAnswerBoxEventListeners() 
     end
 
